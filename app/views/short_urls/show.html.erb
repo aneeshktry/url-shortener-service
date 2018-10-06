@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="cl">URL List</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+          <table class="table table-bordered table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Original Url</th>
+                  <th scope="col">Shoetend Url</th>
+                </tr>
+              </thead>
+              <tbody>
+              <% @urls.each do |url| %>
+                <tr>
+                  <td><%= url.original_url %></td>
+                  <td><%= link_to nil, url.shortend_url, target: "_blank" %></td>
+                </tr>
+              <% end %>
+              </tbody>
+          </table>
+      </div>
+    </div>
+</div>

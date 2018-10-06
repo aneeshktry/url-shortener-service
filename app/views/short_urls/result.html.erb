@@ -1,0 +1,22 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+<% if @shortend_url %>
+  <div class="w50 center-block result-box">
+    <%= @shortend_url %>
+  </div>
+
+  <div class="w10 center-block cl">
+    <%= link_to "Try Another", url_shortner_path ,:class=>"btn btn-primary" %>
+  </div>
+<% end %>
+<% if @error %>
+  <div class="w50 center-block result-box">
+    <%= @error %>
+  </div>
+
+  <div class="w10 center-block cl">
+    <%= link_to "Try", url_shortner_path ,:class=>"btn btn-primary" %>
+  </div>
+<% end %>

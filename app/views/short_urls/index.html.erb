@@ -1,0 +1,11 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<div class="w50 center-block">
+ <% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "cl alert alert-#{key}" %>
+ <% end %>
+  <%= render :partial => "/short_urls/form" %>
+</div>

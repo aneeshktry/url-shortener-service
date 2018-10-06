@@ -1,0 +1,17 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+
+<%= simple_form_for(@short_url, :url=>shorten_url_path, :html=>{:class=>"form-horizontal", :autocomplete=>"off"}) do |f| %>
+  <div class="form-group required cl">
+    <label for="original_url" class="control-label">Original Url</label>
+    <div >
+      <%= f.input :original_url, :label=>false, :placeholder=>"Paste Url hear",:input_html=>{:class=>"form-control"} %>
+    </div>
+  </div>
+  <div class="w10 center-block">
+    <button class="btn btn-primary"> Submit</button>
+  </div>
+<% end %>
