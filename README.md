@@ -11,9 +11,9 @@ Things you may want to cover:
 * Configuration
 Used postgres sql as database. Need to install postgres if not installed.
 
-After installing new role using below command
+After installing create new role using below command
 
-`plsql postgres`
+`psql postgres`
 
 `create role role_name with createdb login password 'password';`
 
